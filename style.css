@@ -9,6 +9,10 @@ html {
   margin: 0;
 }
 
+.fa-align-justify {
+  color: rgb(255, 255, 255);
+}
+
 .navbar {
   color: #57e9ff;
   /* text-align: center; */
@@ -19,9 +23,12 @@ html {
   justify-content: space-between;
   position: fixed;
   width: 100%;
-  margin-top: 10px;
+  /* margin-top: 10px; */
   margin-right: 4rem;
   /* position: relative; */
+  background-color: #005663;
+  /* opacity: 15px; */
+  padding-top: 10px;
 }
 .head {
   /* padding: 10px; */
@@ -88,9 +95,9 @@ a {
   transform: translateX(-20%);
 }
 .icons:hover {
-  border: 2px solid rgba(78, 78, 78, 0.726);
+  border: 2px solid rgba(35, 198, 219, 0.562);
 
-  box-shadow: 0, 0, 15px;
+  box-shadow: 0, 0, 15px #57e9ffab;
 }
 b {
   color: rgb(255, 255, 255);
@@ -186,12 +193,12 @@ button {
   font-size: 15px;
   color: rgb(0, 0, 0);
   background-color: rgb(255, 255, 255);
-
-  padding: 1px;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  border-radius: 5px;
+  padding: 10px;
+  /* padding-top: 5px;
+  padding-bottom: 5px; */
   text-align: center;
-  letter-spacing: 0.5px;
+  /* letter-spacing: 0.5px; */
 }
 .maxx {
   display: flex;
@@ -205,45 +212,37 @@ button {
   font-size: 15px;
   color: rgb(0, 0, 0);
   background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+  padding: 10px;
 
-  padding: 1px;
-  padding-top: 5px;
-  padding-bottom: 5px;
   text-align: center;
-  letter-spacing: 0.5px;
 }
 .max3 {
   font-size: 15px;
   color: rgb(0, 0, 0);
   background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+  padding: 10px;
 
-  padding: 1px;
-  padding-top: 5px;
-  padding-bottom: 5px;
   text-align: center;
-  letter-spacing: 0.5px;
 }
 .max2 {
   font-size: 15px;
   color: rgb(0, 0, 0);
   background-color: rgb(255, 255, 255);
 
-  padding: 1px;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  border-radius: 5px;
+  padding: 10px;
   text-align: center;
-  letter-spacing: 0.5px;
 }
 .max1 {
   font-size: 15px;
   color: rgb(0, 0, 0);
   background-color: rgb(255, 255, 255);
 
-  padding: 1px;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  border-radius: 5px;
+  padding: 10px;
   text-align: center;
-  letter-spacing: 0.5px;
 }
 .s {
   color: rgb(255, 255, 255);
