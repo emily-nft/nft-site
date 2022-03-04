@@ -123,3 +123,35 @@ max4.addEventListener("click", function () {
   plus4 = 10;
   texts4.innerHTML = plus4;
 });
+const h1 = document.querySelector(".load");
+const sleep = document.querySelector(".fa-moon");
+
+// h1.style.color = "white";
+
+const supply = document.querySelectorAll(".s");
+console.log(supply);
+const val = document.querySelectorAll(".t");
+
+sleep.addEventListener("click", function () {
+  if (document.body.style.backgroundColor === "black") {
+    document.body.style.backgroundColor = "white";
+    h1.style.color = "black";
+    document.getElementById("demo").style.color = "black";
+    supply.forEach(function (sup) {
+      sup.style.color = "black";
+    });
+    val.forEach(function (t) {
+      t.style.color = "black";
+    });
+  } else {
+    document.body.style.backgroundColor = "black";
+    h1.style.color = "white";
+    document.getElementById("demo").style.color = "white";
+    supply.forEach(function (sup) {
+      sup.style.color = "white";
+    });
+    val.forEach(function (t) {
+      t.style.color = "white";
+    });
+  }
+});
