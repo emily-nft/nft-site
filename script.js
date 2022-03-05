@@ -125,7 +125,7 @@ max4.addEventListener("click", function () {
 });
 const h1 = document.querySelector(".load");
 const sleep = document.querySelector(".fa-moon");
-
+document.body.style.backgroundColor = "white";
 // h1.style.color = "white";
 
 const supply = document.querySelectorAll(".s");
@@ -133,17 +133,7 @@ console.log(supply);
 const val = document.querySelectorAll(".t");
 
 sleep.addEventListener("click", function () {
-  if (document.body.style.backgroundColor === "black") {
-    document.body.style.backgroundColor = "white";
-    h1.style.color = "black";
-    document.getElementById("demo").style.color = "black";
-    supply.forEach(function (sup) {
-      sup.style.color = "black";
-    });
-    val.forEach(function (t) {
-      t.style.color = "black";
-    });
-  } else {
+  if (document.body.style.backgroundColor === "white") {
     document.body.style.backgroundColor = "black";
     h1.style.color = "white";
     document.getElementById("demo").style.color = "white";
@@ -152,6 +142,16 @@ sleep.addEventListener("click", function () {
     });
     val.forEach(function (t) {
       t.style.color = "white";
+    });
+  } else {
+    document.body.style.backgroundColor = "white";
+    h1.style.color = "black";
+    document.getElementById("demo").style.color = "black";
+    supply.forEach(function (sup) {
+      sup.style.color = "black";
+    });
+    val.forEach(function (t) {
+      t.style.color = "black";
     });
   }
 });
