@@ -1,6 +1,6 @@
-body {
+/* body {
   background-color: black;
-}
+} */
 
 * {
   padding: 0;
@@ -60,22 +60,22 @@ a {
   display: none;
 }
 .one1 {
-  background-color: #00a1bab7;
+  background-color: #005663;
   padding: 10px;
   border-radius: 40px;
 }
 .one2 {
-  background-color: #00a1bab7;
+  background-color: #005663;
   padding: 10px;
   border-radius: 40px;
 }
 .one3 {
-  background-color: #00a1bab7;
+  background-color: #005663;
   padding: 10px;
   border-radius: 40px;
 }
 .one4 {
-  background-color: #00a1bab7;
+  background-color: #005663;
   padding: 10px;
   border-radius: 40px;
   /* #00a1ba  */
@@ -296,18 +296,36 @@ button {
   cursor: pointer;
 }
 .slides > img:hover {
-  border: 2px solid blue;
+  border: 1px solid blue;
   background-color: rgba(255, 255, 255, 0.849);
+  box-sizing: border-box;
+  -moz-box-pack: justify;
 }
 section {
   color: rgb(255, 255, 255);
   display: grid;
-  grid-template-columns: repeat(5, 250px);
-  gap: 2px 25px;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 240px));
+  gap: 1px 25px;
   justify-content: center;
 }
 
-@media (max-width: 680px) {
+.hon {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+.d1 {
+  color: #1571fa;
+}
+.nu {
+  color: #000000;
+}
+.holder1 {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+@media (max-width: 500px) {
   .slides > img {
     width: 100px;
   }
@@ -316,9 +334,11 @@ section {
     display: grid;
     grid-template-columns: repeat(3, 100px);
   }
-}
-.hon {
-  display: flex;
-  justify-content: center;
-  margin-top: 2rem;
+  .d1 {
+    font-size: 15px;
+    display: flex;
+  }
+  .nu {
+    font-size: 18px;
+  }
 }
