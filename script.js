@@ -138,6 +138,7 @@ sleep.addEventListener("click", function () {
     h1.style.color = "white";
     document.getElementById("demo").style.color = "white";
     document.querySelector(".hone").style.color = "white";
+    document.querySelector(".hon").style.color = "white";
     supply.forEach(function (sup) {
       sup.style.color = "white";
     });
@@ -149,6 +150,7 @@ sleep.addEventListener("click", function () {
     h1.style.color = "black";
     document.getElementById("demo").style.color = "black";
     document.querySelector(".hone").style.color = "black";
+    document.querySelector(".hon").style.color = "black";
     supply.forEach(function (sup) {
       sup.style.color = "black";
     });

@@ -278,12 +278,7 @@ button {
   text-align: center;
   margin-top: 2rem;
 }
-section {
-  /* background-color: rgb(255, 255, 255);
-  height: 100; */
-  /* NOT SURE ABOUT THE WHITE BACKGROUND YET */
-  color: rgb(255, 255, 255);
-}
+
 .fa-plus {
   font-size: 15px;
   color: rgb(255, 255, 255);
@@ -291,4 +286,39 @@ section {
 .fa-minus {
   font-size: 15px;
   color: rgb(255, 255, 255);
+}
+.slides > img {
+  width: 250px;
+
+  padding: 5px;
+  margin-top: 12px;
+  /* gap: ; */
+  cursor: pointer;
+}
+.slides > img:hover {
+  border: 2px solid blue;
+  background-color: rgba(255, 255, 255, 0.849);
+}
+section {
+  color: rgb(255, 255, 255);
+  display: grid;
+  grid-template-columns: repeat(5, 250px);
+  gap: 2px 25px;
+  justify-content: center;
+}
+
+@media (max-width: 680px) {
+  .slides > img {
+    width: 100px;
+  }
+  section {
+    gap: 23px;
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+  }
+}
+.hon {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
 }
